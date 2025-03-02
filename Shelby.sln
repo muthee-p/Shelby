@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35425.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vice", "Vice\Vice.vcxproj", "{1ABB012E-91D6-4888-91C5-1AC4AF72627D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shelby", "Shelby\Shelby.vcxproj", "{4E24B1E7-0442-43C5-B0AB-714D6AAA43CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E24B1E7-0442-43C5-B0AB-714D6AAA43CE}.Debug|x64.ActiveCfg = Debug|x64
+		{4E24B1E7-0442-43C5-B0AB-714D6AAA43CE}.Debug|x64.Build.0 = Debug|x64
+		{4E24B1E7-0442-43C5-B0AB-714D6AAA43CE}.Release|x64.ActiveCfg = Release|x64
+		{4E24B1E7-0442-43C5-B0AB-714D6AAA43CE}.Release|x64.Build.0 = Release|x64
+		{1ABB012E-91D6-4888-91C5-1AC4AF72627D}.Debug|x64.ActiveCfg = Debug|x64
+		{1ABB012E-91D6-4888-91C5-1AC4AF72627D}.Debug|x64.Build.0 = Debug|x64
+		{1ABB012E-91D6-4888-91C5-1AC4AF72627D}.Release|x64.ActiveCfg = Release|x64
+		{1ABB012E-91D6-4888-91C5-1AC4AF72627D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B5EAB17-F724-4C1D-9B39-2782EA4D44C6}
+	EndGlobalSection
+EndGlobal
