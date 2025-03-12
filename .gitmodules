@@ -1,0 +1,3 @@
+[submodule "Shelby/vendor/spdlog"]
+	path = Shelby/vendor/spdlog
+	url = https://github.com/gabime/spdlog

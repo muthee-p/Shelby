@@ -1,36 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Shelby">
+      <UniqueIdentifier>{2C600ED1-1802-39A7-01BD-4CFBEDFDBFF7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Shelby\Events">
+      <UniqueIdentifier>{90A2E86B-FC62-64A2-C59D-AD1F311DA97E}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Shelby\Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Shelby.h" />
     <ClInclude Include="src\Shelby\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>Shelby</Filter>
     </ClInclude>
-    <ClInclude Include="src\Shelby.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Shelby\Core.h">
+      <Filter>Shelby</Filter>
     </ClInclude>
     <ClInclude Include="src\Shelby\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>Shelby</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shelby\Events\ApplicationEvent.h">
+      <Filter>Shelby\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shelby\Events\Event.h">
+      <Filter>Shelby\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shelby\Events\KeyEvent.h">
+      <Filter>Shelby\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shelby\Events\MouseEvent.h">
+      <Filter>Shelby\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shelby\Log.h">
+      <Filter>Shelby</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Shelby\Application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Shelby</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shelby\Log.cpp">
+      <Filter>Shelby</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

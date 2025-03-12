@@ -10,3 +10,5 @@
 	#error Shelby only supports Windows!
 
 #endif // DEBUG
+
+#define BIT(x) (1 << x)
