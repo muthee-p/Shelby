@@ -18,6 +18,9 @@ project "Shelby"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	-- pchheader "sbpch.h"
+	-- pchsource "Shelby/src/sbpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -76,7 +79,7 @@ project "Vice"
 
 	includedirs
 	{
-		"Sheby/vendor/spdlog/include",
+		"Shelby/vendor/spdlog/include",
 		"Shelby/src"
 	}
 
