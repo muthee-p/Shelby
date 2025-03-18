@@ -14,7 +14,7 @@ namespace Shelby {
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WinsdowMoved,
 		AppTick, AppUpdate, AppRender, 
 		KeyPressed, KeyReleased,
-		MouseButtonPressed, MuseButtonReleased, MouseMoved, MouseScrolled
+		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
 	enum EventCategory

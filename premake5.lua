@@ -18,8 +18,8 @@ project "Shelby"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-	-- pchheader "sbpch.h"
-	-- pchsource "Shelby/src/sbpch.cpp"
+	pchheader "sbpch.h"
+	pchsource "Shelby/src/sbpch.cpp"
 
 	files
 	{

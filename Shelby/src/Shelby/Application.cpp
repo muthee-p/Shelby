@@ -15,14 +15,14 @@ namespace Shelby {
 	void Application::Run()
 	{
 		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
+		/*if (e.IsInCategory(EventCategoryApplication))
 		{
 			SB_TRACE(e);
 		}
 		if (e.IsInCategory(EventCategoryInput))
 		{
 			SB_TRACE(e);
-		}
+		}*/
 
 		while (true);
 	}
