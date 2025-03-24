@@ -62,10 +62,10 @@ namespace Shelby {
 		int m_Button;
 	};
 
-	class SHELBY_API MouseButtonPresssedEvent : public MouseButtonEvent
+	class SHELBY_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtonPresssedEvent(int button)
+		MouseButtonPressedEvent(int button)
 			: MouseButtonEvent(button) {}
 
 		std::string ToString() const override
