@@ -6,6 +6,8 @@
 #include "Shelby/Events/MouseEvent.h"
 #include "Shelby/Events/ApplicationEvent.h"
 
+#include <glad/glad.h>
+
 
 namespace Shelby {
 	static bool s_GLFWInitialized = false;
@@ -51,6 +53,8 @@ namespace Shelby {
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		SB_CORE_ASSERT(status, "Failed to init glad");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 

@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}" --configurations
 --include dir relative to root folder
 IncludeDir = {}
 IncludeDir["GLFW"] = "Shelby/vendor/GLFW/include"
+IncludeDir["Glad"] = "Shelby/vendor/GLFW/include"
 
 include "Shelby/vendor/GLFW"
+include "Shelby/vendor/Glad"
 
 project "Shelby"
 	location "Shelby"
@@ -37,12 +39,14 @@ project "Shelby"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links 
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
