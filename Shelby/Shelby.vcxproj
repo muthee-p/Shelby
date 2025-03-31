@@ -147,6 +147,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Shelby\LayerStack.h" />
+    <ClInclude Include="src\Shelby\Layer.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Shelby.h" />
     <ClInclude Include="src\Shelby\Application.h" />
     <ClInclude Include="src\Shelby\Core.h" />
@@ -157,10 +160,12 @@
     <ClInclude Include="src\Shelby\Events\MouseEvent.h" />
     <ClInclude Include="src\Shelby\Log.h" />
     <ClInclude Include="src\sbpch.h" />
-    <ClInclude Include="Window.h" />
-    <ClInclude Include="WindowsWindow.h" />
+    <ClInclude Include="src\Shelby\Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Shelby\LayerStack.cpp" />
+    <ClCompile Include="src\Shelby\Layer.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Shelby\Application.cpp" />
     <ClCompile Include="src\Shelby\Log.cpp" />
     <ClCompile Include="src\sbpch.cpp">
@@ -168,7 +173,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="WindowsWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">

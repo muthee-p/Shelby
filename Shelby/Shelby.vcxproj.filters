@@ -7,12 +7,6 @@
     <Filter Include="Shelby\Events">
       <UniqueIdentifier>{90A2E86B-FC62-64A2-C59D-AD1F311DA97E}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform">
-      <UniqueIdentifier>{cb87f289-7d29-4755-82b7-ad9a1aecafe3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\Windows">
-      <UniqueIdentifier>{f3165128-26f6-4d5d-b322-96d2192e48c1}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Shelby.h" />
@@ -40,13 +34,13 @@
     <ClInclude Include="src\Shelby\Log.h">
       <Filter>Shelby</Filter>
     </ClInclude>
-    <ClInclude Include="WindowsWindow.h">
-      <Filter>Platform\Windows</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.h">
+    <ClInclude Include="src\Shelby\Window.h">
       <Filter>Shelby</Filter>
     </ClInclude>
     <ClInclude Include="src\sbpch.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Shelby\Layer.h" />
+    <ClInclude Include="src\Shelby\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Shelby\Application.cpp">
@@ -55,9 +49,9 @@
     <ClCompile Include="src\Shelby\Log.cpp">
       <Filter>Shelby</Filter>
     </ClCompile>
-    <ClCompile Include="WindowsWindow.cpp">
-      <Filter>Platform\Windows</Filter>
-    </ClCompile>
     <ClCompile Include="src\sbpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
+    <ClCompile Include="src\Shelby\Layer.cpp" />
+    <ClCompile Include="src\Shelby\LayerStack.cpp" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,6 @@
 #include "sbpch.h"
 #include "WindowsWindow.h"
 
-#include "Shelby/Events/EventFormatter.h"
 #include "Shelby/Log.h"
 #include "Shelby/Events/KeyEvent.h"
 #include "Shelby/Events/MouseEvent.h"

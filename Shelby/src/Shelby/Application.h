@@ -1,8 +1,11 @@
 #pragma once
 
 #include "Core.h"
+
+#include "LayerStack.h"
 #include "Events/Event.h"
-#include "/dev/Shelby/Shelby/Window.h"
+#include "Shelby/Window.h"
+#include "Events/ApplicationEvent.h"
 
 namespace Shelby {
 
@@ -15,9 +18,15 @@ namespace Shelby {
 		void Run();
 		void OnEvent(Event& e);
 
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* layer);
+
 	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
+		LayerStack m_LayerStack;
 	};
 
 

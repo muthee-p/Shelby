@@ -64,14 +64,17 @@ project "Shelby"
 
 	filter "configurations:Debug"
 		defines "SB_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "SB_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Dist"
 		defines "SB_DIST"
+		buildoptions "/MD"
 		symbols "On"
 	
 ---------------------------------------client--------------------------------
@@ -113,12 +116,15 @@ project "Vice"
 
 	filter "configurations:Debug"
 		defines "SB_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "SB_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Dist"
 		defines "SB_DIST"
+		buildoptions "/MD"
 		symbols "On"

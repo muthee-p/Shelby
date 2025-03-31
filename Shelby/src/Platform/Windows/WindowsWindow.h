@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Window.h"
+#include "Shelby/Window.h"
 #include <GLFW/glfw3.h>
 
 namespace Shelby {
@@ -37,4 +37,8 @@ namespace Shelby {
 	};
 
 }
+
+class WindowsWindow
+{
+};
 
